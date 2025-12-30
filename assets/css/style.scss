@@ -26,6 +26,7 @@ body{
     border-radius: 0.5rem;
     height: 2.5rem;
     text-align: right;
+    margin-bottom: 0.5rem;
 }
 .calculadora button{
     font-size: 1.6em;
@@ -35,6 +36,9 @@ body{
     height: 3rem;
     border: none;
     cursor: pointer;
+}
+.calculadora > table{
+    border-spacing: 0.2rem; /* horizontal | vertical */
 }
 .numbers{
     background-color: #8D8D8D;
@@ -51,7 +55,7 @@ body{
 .del{
     background-color: #6e6e6e;
 }
-.del:hover,*/.del:focus{
+.del:hover,.del:focus{
     background-color: #acabab;
 }
 .clear-res{
@@ -65,5 +69,15 @@ h1{
     text-align: center;
     color: white;
     margin-bottom: 1rem;
-    
 }
+@media (max-width: 768px) {
+    .calculadora button{
+        height: 4rem !important;
+        border-radius: 2rem !important;
+    }
+    .calculadora input{
+        height: 3.5rem !important;
+        
+    }
+}
+

@@ -41,15 +41,7 @@
 
                             const valor = inputText.value
                             const resultado = eval(valor)
-
-                            //Colocando a frase carregando e a nota 10
-                            const time = setTimeout(function () {
-                                inputText.value = resultado
-                            }, 2000)
-
-
-
-                            inputText.value = "Carregando..."
+                            inputText.value = resultado
                         }
                     }
 

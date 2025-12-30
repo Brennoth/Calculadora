@@ -29,6 +29,7 @@ body {
   border-radius: 0.5rem;
   height: 2.5rem;
   text-align: right;
+  margin-bottom: 0.5rem;
 }
 
 .calculadora button {
@@ -39,6 +40,10 @@ body {
   height: 3rem;
   border: none;
   cursor: pointer;
+}
+
+.calculadora > table {
+  border-spacing: 0.2rem; /* horizontal | vertical */
 }
 
 .numbers {
@@ -53,7 +58,7 @@ body {
   background-color: #757575;
 }
 
-.operadores:hover {
+.operadores:hover, .operadores:focus {
   background-color: #acabab;
 }
 
@@ -61,8 +66,7 @@ body {
   background-color: #6e6e6e;
 }
 
-/* .del:hover,*/
-.del:focus {
+.del:hover, .del:focus {
   background-color: #acabab;
 }
 
@@ -70,7 +74,7 @@ body {
   background-color: #E5853F;
 }
 
-.clear-res:hover {
+.clear-res:hover, .clear-res:focus {
   background-color: #e49964;
 }
 
@@ -79,4 +83,14 @@ h1 {
   text-align: center;
   color: white;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .calculadora button {
+    height: 4rem !important;
+    border-radius: 2rem !important;
+  }
+  .calculadora input {
+    height: 3.5rem !important;
+  }
 }/*# sourceMappingURL=style.css.map */
