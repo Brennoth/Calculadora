@@ -44,11 +44,7 @@
 
                             //Colocando a frase carregando e a nota 10
                             const time = setTimeout(function () {
-                                if (resultado === 10) {
-                                    inputText.value = "vc e nota 10 arthur"
-                                } else {
-                                    inputText.value = resultado
-                                }
+                                inputText.value = resultado
                             }, 2000)
 
 
